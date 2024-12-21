@@ -1,0 +1,167 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    background-color: #6e5636fb;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  header > section{
+    margin-top: -100px;
+    margin-left: 10px;
+    float: left;
+  }
+  
+  main {
+    /* max-width: 800px; */
+    height: 70vh;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    margin: 1rem 0;
+  }
+  .dropdown select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  #dropdown-output{
+    font-size: medium;
+    color:rgb(252, 255, 255)
+  }
+  
+  /* Modal Styles */
+.modal {
+  /* margin-top: 150px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.modal-content {
+  text-align: center;
+  color: rgba(8, 95, 76, 0.825);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+  /* Form */
+  #form-section{
+    border-radius: 10px;
+    background-color: rgb(169, 190, 208);
+    height: 300px;
+    width: 500px;
+    margin: auto;
+  }
+  #form-section>h2{
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 1rem;
+    margin: auto;
+    
+  }
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    width: 40%;
+    padding: 0.5rem;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+  }
+  button[type="submit"]:hover {
+    background: #9046ce;
+  }
+  
+  /* Styling for the error messages */
+.error {
+  color: red;                /* Red text for error messages */
+  font-size: 14px;           /* Slightly smaller font size for emphasis */
+  font-weight: bold;         /* Bold text to draw attention */
+  text-align: center;
+  margin-top: 10px;          /* Spacing above the error message */
+  padding: 5px;              /* Add padding for better readability */
+  /* background-color: #ffe6e6;  */
+  /* border: 1px solid #ff9999; */
+  border-radius: 5px;        /* Rounded corners for a modern look */
+  display: none;             /* Initially hidden (useful if shown dynamically) */
+}
+
+/* Show the error message when it contains text */
+.error:empty {
+  display: none;             /* Keeps the error paragraph hidden if there's no content */
+}
+
+.error:not(:empty) {
+  display: block;            /* Makes the error message visible when it has content */
+}
+
+
+  /* Footer Section Styles */
+.footer {
+  background-color: #928254; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the content */
+  padding: 10px 0; /* Top and bottom padding */
+  font-size: 14px; /* Font size for footer */
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0; /* Align to bottom */
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+.footer p {
+  margin: 5px 0; /* Add spacing between lines */
+}

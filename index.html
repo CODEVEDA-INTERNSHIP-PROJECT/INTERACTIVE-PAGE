@@ -1,0 +1,92 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to JavaScript Interaction</h1>
+        <section id="dropdown-section">
+            <h2>Dropdown</h2>
+            <select id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <p id="dropdown-output"></p>
+        </section>
+        <section id="modal-section">
+            <h2> Modal</h2>
+            <button id="modal-button">Open Modal</button>
+            <div class="modal hidden">
+              <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <p>This is a modal window.</p>
+                <p>You can close it by clicking outside or on the close icon.</p>
+              </div>
+            </div>
+            <div class="modal-overlay hidden"></div>
+          </section>
+    </header>
+
+    <main>
+        <!-- Dropdown Section -->
+        <!-- <section id="dropdown-section">
+            <h2>Interactive Dropdown</h2>
+            <select id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <p id="dropdown-output"></p>
+        </section> -->
+
+        <!-- Modal Section -->
+        <!-- <section id="modal-section">
+            <h2>Interactive Modal</h2>
+            <button id="modal-button">Open Modal</button>
+            <div class="modal hidden">
+              <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <p>This is a modal window.</p>
+                <p>You can close it by clicking outside or on the close icon.</p>
+              </div>
+            </div>
+            <div class="modal-overlay hidden"></div>
+          </section> -->
+          
+
+        <!-- Form Validation Section -->
+        <section id="form-section" >
+            <h2>Form Validation</h2>
+            <form id="form" novalidate>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <button type="submit">Submit</button>
+            </form>
+            <!-- Add this paragraph to display errors -->
+            <p class="error" style="color: red;"></p>
+          </section>
+          
+        
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created by: <strong>Your Name</strong></p>
+        <p>Creation Date: <strong>12th December 2024</strong></p>
+    </footer>
+  
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
